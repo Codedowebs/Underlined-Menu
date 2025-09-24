@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underlined Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #242331;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            overflow: hidden;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+        }
+
+        header ul {
+            display: flex;
+            gap: 50px;
+        }
+
+        header ul a {
+            color: white;
+            font-family: "Montserrat";
+            cursor: pointer;
+            position: relative;
+            font-size: 20px;
+        }
+
+        a::before {
+            content: '';
+            position: absolute;
+            background: #ae63ce;
+            height: 3px;
+            width: 0%;
+            transition: 0.4s ease;
+            bottom: -8px;
+        }
+
+        a:hover::before {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <a>Home</a>
+            <a>About</a>
+            <a>Contact</a>
+            <a>Login</a>
+        </ul>
+    </header>
+</body>
+</html>
